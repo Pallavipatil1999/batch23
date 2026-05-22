@@ -1,3 +1,4 @@
+oh<<<<<<< HEAD
 
 
 Hello this data from main
@@ -8,3 +9,6 @@ this data from git user
 =======
 Hello this is for testing
 (new data)
+=======
+Hello this data from feature
+>>>>>>> 5789cd1 (file from feature)
