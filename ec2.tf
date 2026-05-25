@@ -1,7 +1,5 @@
 provider "aws" {
 region = "us-east-1"
-access_key = "aeaef"
-secret_key = "sdfas"
 }
 resource "aws_instance" "myec2" {
         ami = "ami-091138d0f0d41ff90"
