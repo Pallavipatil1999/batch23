@@ -1,21 +1,23 @@
 terraform {
   backend "s3" {
-    bucket = "batch23-123"
-    region = "us-east-1"
+    bucket = var.mybucket
+    region = var.region
     key = "tfstate"
   }
 }
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 resource "aws_instance" "myec2" {
-  ami                    = "ami-091138d0f0d41ff90"
-  instance_type          = "t3.micro"
-  key_name               = "id_rsa"
-  vpc_security_group_ids = ["sg-0aed4cc5284ab673b"]
+  ami                    = var.ami
+  instance_type          = var.instance_type
+  key_name               = var.key_name
+  vpc_security_group_ids = var.mysg
   tags = {
-    Name = "myec2"
+    Name = var.instance-name
     name = "suraj"
     env  = "dev"
   }
 }
+
+
