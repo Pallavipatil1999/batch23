@@ -15,7 +15,7 @@ variable "key_name" {
   default = "id_rsa"
 }
 variable "mysg" {
-  default = "[sg-0aed4cc5284ab673b]"
+  default = "sg-0aed4cc5284ab673b"
 }
 variable "instance-name" {
   default = "myec2"
