@@ -22,7 +22,7 @@ resource "aws_subnet" "pvt-sub" {
   }
 }
 resource "aws_internet_gateway" "myigw" {
-  vpc_id = aws_vpc.myvpc
+  vpc_id = aws_vpc.myvpc.id
 
 }
 resource "aws_route_table" "myroute" {
