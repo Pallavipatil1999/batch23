@@ -1,0 +1,11 @@
+numbers = 12349464
+string = "suraj123"  'suraj'
+list ["suraj123", 'suraj']
+
+teachers:
+ - aws
+ - linux
+
+address:
+  city: pune
+    location: karve nager
