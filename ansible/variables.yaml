@@ -27,6 +27,6 @@
 
     - name: print hostname
       debug:
-        msg: "{{machineName}}"
+        msg: "{{machineName.stdout}}"
 
      
