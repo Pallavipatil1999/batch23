@@ -1,9 +1,9 @@
 - name: this is variable learning
   hosts: all
-  vars: 
-    animal: "tiger"
-  vars_files:
-    - ./var.txt
+  # vars: 
+  #   animal: "tiger"
+  # vars_files:
+  #   - ./var.txt
   vars_prompt:
    - name: animal
      prompt: enter your animal name
