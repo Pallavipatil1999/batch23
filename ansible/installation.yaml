@@ -1,5 +1,6 @@
 - name: this playbook for apache2 isntallation
   hosts: all
+  become: true
   tasks:
     - name: install apache2
       apt:
