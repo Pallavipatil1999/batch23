@@ -5,12 +5,12 @@
     - name: update
       shell:
         cmd: apt-get update
-    - name: install apache2
-      apt:
-        name: apache2
-        state: latest
 
     - name: install httpd
       yum:
         name: httpd
+        state: latest
+    - name: install apache2
+      apt:
+        name: apache2
         state: latest
