@@ -1,0 +1,12 @@
+- name: update webserver
+  hosts: all
+  tasks:
+    - name: change web page
+      copy:
+       src: index.html
+       dest: /var/www/html/index.html
+    - name: start service
+      systemd:
+        name: apache2
+        state: restarted
+        enabled: true
