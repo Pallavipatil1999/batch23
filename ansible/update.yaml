@@ -15,10 +15,11 @@
     - name: add block of lines
       blockinfile:
         path: /var/www/html/index.html
+        marker: "<!-- {mark} ANSIBLE MANAGED BLOCK -->"
         block: |
-          this is batch23
-          welcome all 
-          for devops
+          <h1> hello my name is suraj </h1>
+          <h2> this line 2 </h2>
+          <h3> this is block of lines </h3>
 
 
     - name: start service
