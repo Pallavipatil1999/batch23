@@ -20,6 +20,7 @@
           <h1> hello my name is suraj </h1>
           <h2> this line 2 </h2>
           <h3> this is block of lines </h3>
+          This is the latest (stable) Ansible community documentation. For Red Hat Ansible Automation Platform subscriptions, see Life Cycle for version details
 
 
     - name: start service
