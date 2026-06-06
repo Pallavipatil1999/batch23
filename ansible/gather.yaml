@@ -4,9 +4,15 @@
     - name: collect os name
       debug:
         msg: "{{ansible_distribution}}"
+      tags:
+      - task1
     - name: collect ip address
       debug:
         msg: "{{ansible_default_ipv4}}"
+      tags:
+      - task2
     - name: print working directory
       debug:
         msg: "{{ansible_nodename}}"
+      tags:
+      - task3
