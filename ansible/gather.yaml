@@ -9,4 +9,4 @@
         msg: "{{ansible_default_ipv4}}"
     - name: print working directory
       debug:
-        msg: "{{PWD}}"
+        msg: "{{ansible_nodename}}"
