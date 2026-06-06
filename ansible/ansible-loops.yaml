@@ -1,0 +1,19 @@
+- name: loop for automating mutiple task
+  hosts: all
+  tasks:
+    - name: print list
+      debug:
+        msg: "{{item}}"
+      loop:
+        - apply
+        - banana
+        - mango
+
+    - name: install vim, wget, httpd
+      package:
+        name: "{{item}}"
+        state: latest
+      loop:
+        - vim
+        - wget
+        - apache2
