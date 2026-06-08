@@ -1,0 +1,4 @@
+- name: this is role execution
+  hosts: all
+  roles:
+   - role: webserver

@@ -1,3 +1,15 @@
 #SPDX-License-Identifier: MIT-0
 ---
-# tasks file for webserver
+# tasks file for webserver   
+- name: install package
+  package:
+    name: "{{package}}"
+    state: present
+  when: ansible_os_family == "Debian"
+- name: change web page
+  copy:
+    src: index.html
+    dest: /var/www/html/index.html
+  notify:
+    - restart service
+
