@@ -1,0 +1,17 @@
+services:
+  tomcat-server:
+    build: .
+  http-server:
+    image: surajbele/batch23:httpd-v1
+    environment:
+      - name=suraj
+      - department=devops
+    ports:
+      - 80:80
+  apache-server:
+    image: surajbele/batch23:apache2
+    ports:
+      - 81:80
+    volumes:
+      - /opt/data 
+  
