@@ -1,6 +1,8 @@
 services:
   tomcat-server:
     build: .
+    ports:
+      - 8080:8080
   http-server:
     image: surajbele/batch23:httpd-v1
     environment:
